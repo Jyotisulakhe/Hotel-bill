@@ -1,82 +1,63 @@
 #include<stdio.h>
 #include<stdlib.h>
 int main(){
+    int option,plate,bill;
 
-//hotel bill 
- int dish ,plate,bill;
- while(1){
- printf("enter your favourite dish (a-f)\n");
- printf("a: Samosa\n");
-  printf("b: Kachori\n");
-   printf("c: Idli\n");
-   printf("d: chana Poha\n");
-     printf("e: Dosa\n");
-      printf("f: Exit\n");
+   // char ch;
+    while(1)
+    {
 
-
- scanf("%c",&dish);
- switch(dish){
-  case 'a':printf("Samosa :)\n");
-
-
-        printf("enter total plate:");
+        printf("select any one dish ");
+        printf("\n1.samosa\n2.kachori");
+          printf("\n3.idli\n4.dosa");
+           printf("\n5.Exit\n");
+            printf("Choose one option:\n");
+            scanf("%d",&option);
+            switch(option)
+            {
+            case 1:
+                printf("samosa\n");
+                printf("enter total plate:");
         scanf("%d",&plate);
         printf(" price of one plate=15 Rs\n\n");
        bill=plate*15;
         printf("Bill: %d\n\n",bill);
+        break;
 
- break;
-   case 'b':printf("kachori\n");
-
-
-        printf("enter total plate::");
+            case 2:
+                printf("Kachori\n");
+      printf("enter total plate:");
         scanf("%d",&plate);
-        printf("price of one plate=15 Rs\n\n");
-       bill=plate*15;
-        printf("Bill: %d\n",bill);
-
-   break;
-   case 'c':printf("idli\n");
-
-
-        printf("enter total plate: ");
-        scanf("%d",&plate);
-        printf("price of one plate=20 Rs\n\n");
+        printf(" price of one plate=15 Rs\n\n");
        bill=plate*20;
-        printf("Bill: %d\n",bill);
-
-   break;
-   case 'd':printf("chana poha\n");
-
-
-        printf("enter total plate: ");
+        printf("Bill: %d\n\n",bill);
+        break;
+                case 3:
+                    printf("idli\n");
+                printf("enter total plate:");
         scanf("%d",&plate);
-        printf("price of one plate=25 Rs\n\n");
+        printf(" price of one plate=15 Rs\n\n");
        bill=plate*25;
-        printf("Bill: %d\n",bill);
+        printf("Bill: %d\n\n",bill);
+        break;
 
-   break;
-   case 'e':printf("Dosa\n");
-
-
-        printf("enter total plate: ");
+                case 4:
+             printf("dosa\n");
+              printf("enter total plate:");
         scanf("%d",&plate);
-        printf("price of one plate=30 Rs\n\n");
+        printf(" price of one plate=15 Rs\n\n");
        bill=plate*30;
-        printf("Bill: %d\n",bill);
+        printf("Bill: %d\n\n",bill);
+        break;
+                case 5:
+                printf("exited\n");
 
+                exit(0);
+                break;
 
-
-    case 'f':
-        printf("Exit\n");
-
-   exit(0);
-     break;
-
-
-
- }
-
- }
+          }
+    }
 
 }
+
+
