@@ -28,7 +28,7 @@ int main(){
                 printf("Kachori\n");
       printf("enter total plate:");
         scanf("%d",&plate);
-        printf(" price of one plate=15 Rs\n\n");
+        printf(" price of one plate=20 Rs\n\n");
        bill=plate*20;
         printf("Bill: %d\n\n",bill);
         break;
@@ -36,7 +36,7 @@ int main(){
                     printf("idli\n");
                 printf("enter total plate:");
         scanf("%d",&plate);
-        printf(" price of one plate=15 Rs\n\n");
+        printf(" price of one plate=25 Rs\n\n");
        bill=plate*25;
         printf("Bill: %d\n\n",bill);
         break;
@@ -45,7 +45,7 @@ int main(){
              printf("dosa\n");
               printf("enter total plate:");
         scanf("%d",&plate);
-        printf(" price of one plate=15 Rs\n\n");
+        printf(" price of one plate=30 Rs\n\n");
        bill=plate*30;
         printf("Bill: %d\n\n",bill);
         break;
